@@ -32,6 +32,12 @@ def make_parser():
     parser.add_argument("--init_thr", type=float, default=0.50, help="轨迹初始化时使用，检测轨迹置信度，低于此值会被直接过滤")
     parser.add_argument("--match_thr", type=float, default=0.70,help="轨迹和检测框关联必须达到的iou匹配值，会逐步缩减，提高要求，跟reduce_step配合使用")
 
+    # For ReID
+    parser.add_argument("--with_ReID", type=bool, default=False,help="是否使用ReID")
+    parser.add_argument("--ReID_config", type=bool, default=False,help="ReID模型配置")
+    parser.add_argument("--ReID_weight", type=bool, default=False,help="ReID权重")
+
+
     # For vedio test
     parser.add_argument("--video", type=str, required=False,default=r"G:\需求\dataset\MOT17\train\video\mot17视频\MOT17-09-64.mp4", help="输入视频路径")  # 新增视频路径参数
 
@@ -45,7 +51,6 @@ def main(args):
         "conf": args.conf,
         "iou": args.iou,
         "classes": args.classes,
-        # "embed": [21],
     }
 
     model = YOLO(args.model)
