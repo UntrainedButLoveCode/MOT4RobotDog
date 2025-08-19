@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2f83bb88-ac28-4eb3-98da-88cdfc03012e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/2tensorRT.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4debug_getFeats.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/final1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/outputs/res.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trackers/cmc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trackers/gmc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trackers/kalman_filter.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trackers/track.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trackers/tracker.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/trackers/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/etc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/gbi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/bug-report.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/feature-request.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/ISSUE_TEMPLATE/question.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/dependabot.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/cla.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/docker.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/docs.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/format.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/links.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/merge-main-into-prs.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/mirror.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/publish.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/stale.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CITATION.cff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.zh-CN.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/Dockerfile-arm64" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/Dockerfile-conda" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/Dockerfile-cpu" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/Dockerfile-jetson-jetpack4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/Dockerfile-jetson-jetpack5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/Dockerfile-jetson-jetpack6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/Dockerfile-jupyter" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/Dockerfile-python" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/Dockerfile-python-export" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/Dockerfile-runner" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build_docs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/build_reference.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/coming_soon_template.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/classify/caltech101.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/classify/caltech256.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/classify/cifar10.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/classify/cifar100.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/classify/fashion-mnist.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/classify/imagenet.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/classify/imagenet10.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/classify/imagenette.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/classify/imagewoof.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/classify/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/classify/mnist.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/detect/african-wildlife.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/detect/argoverse.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/detect/brain-tumor.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/detect/coco.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/detect/coco128.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/detect/coco8-grayscale.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/detect/coco8-multispectral.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/detect/coco8.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/detect/globalwheat2020.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/detect/homeobjects-3k.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/detect/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/detect/lvis.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/detect/medical-pills.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/detect/objects365.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/detect/open-images-v7.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/detect/roboflow-100.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/detect/signature.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/detect/sku-110k.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/detect/visdrone.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/detect/voc.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/detect/xview.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/explorer/api.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/explorer/dashboard.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/explorer/explorer.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/explorer/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/obb/dota-v2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/obb/dota8.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/obb/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/pose/coco.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/pose/coco8-pose.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/pose/dog-pose.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/pose/hand-keypoints.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/pose/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/pose/tiger-pose.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/segment/carparts-seg.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/segment/coco.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/segment/coco8-seg.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/segment/crack-seg.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/segment/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/segment/package-seg.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/datasets/track/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/analytics.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/azureml-quickstart.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/conda-quickstart.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/coral-edge-tpu-on-raspberry-pi.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/data-collection-and-annotation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/deepstream-nvidia-jetson.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/defining-project-goals.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/distance-calculation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/docker-quickstart.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/heatmaps.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/hyperparameter-tuning.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/instance-segmentation-and-tracking.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/isolating-segmentation-objects.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/kfold-cross-validation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/model-deployment-options.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/model-deployment-practices.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/model-evaluation-insights.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/model-monitoring-and-maintenance.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/model-testing.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/model-training-tips.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/nvidia-jetson.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/object-blurring.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/object-counting.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/object-cropping.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/optimizing-openvino-latency-vs-throughput-modes.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/parking-management.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/preprocessing_annotated_data.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/queue-management.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/raspberry-pi.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/region-counting.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/ros-quickstart.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/sahi-tiled-inference.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/security-alarm-system.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/similarity-search.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/speed-estimation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/steps-of-a-cv-project.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/streamlit-live-inference.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/trackzone.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/triton-inference-server.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/vertex-ai-deployment-with-docker.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/view-results-in-terminal.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/vision-eye.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/workouts-monitoring.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/yolo-common-issues.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/yolo-data-augmentation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/yolo-performance-metrics.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/guides/yolo-thread-safe-inference.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/help/CI.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/help/CLA.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/help/FAQ.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/help/code-of-conduct.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/help/contributing.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/help/environmental-health-safety.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/help/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/help/minimum-reproducible-example.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/help/privacy.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/help/security.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/hub/api/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/hub/app/android.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/hub/app/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/hub/app/ios.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/hub/cloud-training.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/hub/datasets.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/hub/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/hub/inference-api.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/hub/integrations.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/hub/models.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/hub/pro.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/hub/projects.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/hub/quickstart.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/hub/teams.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/albumentations.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/amazon-sagemaker.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/clearml.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/comet.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/coreml.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/dvc.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/edge-tpu.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/google-colab.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/gradio.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/ibm-watsonx.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/jupyterlab.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/kaggle.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/mlflow.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/mnn.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/ncnn.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/neural-magic.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/onnx.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/openvino.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/paddlepaddle.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/paperspace.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/ray-tune.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/roboflow.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/rockchip-rknn.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/seeedstudio-recamera.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/sony-imx500.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/tensorboard.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/tensorrt.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/tf-graphdef.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/tf-savedmodel.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/tfjs.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/tflite.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/torchscript.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/vscode.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/integrations/weights-biases.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/macros/augmentation-args.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/macros/export-args.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/macros/export-table.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/macros/predict-args.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/macros/sam-auto-annotate.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/macros/solutions-args.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/macros/track-args.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/macros/train-args.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/macros/validation-args.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/macros/visualization-args.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/macros/yolo-cls-perf.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/macros/yolo-det-perf.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/macros/yolo-obb-perf.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/macros/yolo-pose-perf.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/macros/yolo-seg-perf.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/models/fast-sam.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/models/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/models/mobile-sam.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/models/rtdetr.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/models/sam-2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/models/sam.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/models/yolo-nas.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/models/yolo-world.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/models/yolo11.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/models/yolo12.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/models/yoloe.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/models/yolov10.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/models/yolov3.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/models/yolov4.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/models/yolov5.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/models/yolov6.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/models/yolov7.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/models/yolov8.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/models/yolov9.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/modes/benchmark.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/modes/export.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/modes/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/modes/predict.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/modes/track.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/modes/train.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/modes/val.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/quickstart.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/cfg/__init__.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/data/annotator.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/data/augment.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/data/base.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/data/build.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/data/converter.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/data/dataset.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/data/loaders.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/data/split.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/data/split_dota.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/data/utils.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/engine/exporter.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/engine/model.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/engine/predictor.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/engine/results.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/engine/trainer.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/engine/tuner.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/engine/validator.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/hub/__init__.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/hub/auth.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/hub/google/__init__.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/hub/session.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/hub/utils.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/fastsam/model.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/fastsam/predict.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/fastsam/utils.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/fastsam/val.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/nas/model.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/nas/predict.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/nas/val.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/rtdetr/model.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/rtdetr/predict.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/rtdetr/train.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/rtdetr/val.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/sam/amg.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/sam/build.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/sam/model.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/sam/modules/blocks.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/sam/modules/decoders.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/sam/modules/encoders.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/sam/modules/memory_attention.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/sam/modules/sam.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/sam/modules/tiny_encoder.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/sam/modules/transformer.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/sam/modules/utils.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/sam/predict.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/utils/loss.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/utils/ops.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/yolo/classify/predict.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/yolo/classify/train.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/yolo/classify/val.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/yolo/detect/predict.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/yolo/detect/train.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/yolo/detect/val.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/yolo/model.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/yolo/obb/predict.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/yolo/obb/train.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/yolo/obb/val.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/yolo/pose/predict.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/yolo/pose/train.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/yolo/pose/val.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/yolo/segment/predict.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/yolo/segment/train.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/yolo/segment/val.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/yolo/world/train.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/yolo/world/train_world.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/yolo/yoloe/predict.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/yolo/yoloe/train.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/yolo/yoloe/train_seg.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/models/yolo/yoloe/val.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/nn/autobackend.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/nn/modules/activation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/nn/modules/block.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/nn/modules/conv.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/nn/modules/head.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/nn/modules/transformer.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/nn/modules/utils.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/nn/tasks.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/nn/text_model.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/solutions/ai_gym.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/solutions/analytics.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/solutions/config.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/solutions/distance_calculation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/solutions/heatmap.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/solutions/instance_segmentation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/solutions/object_blurrer.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/solutions/object_counter.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/solutions/object_cropper.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/solutions/parking_management.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/solutions/queue_management.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/solutions/region_counter.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/solutions/security_alarm.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/solutions/similarity_search.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/solutions/solutions.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/solutions/speed_estimation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/solutions/streamlit_inference.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/solutions/trackzone.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/solutions/vision_eye.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/trackers/basetrack.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/trackers/bot_sort.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/trackers/byte_tracker.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/trackers/track.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/trackers/utils/gmc.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/trackers/utils/kalman_filter.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/trackers/utils/matching.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/__init__.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/autobatch.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/autodevice.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/benchmarks.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/callbacks/base.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/callbacks/clearml.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/callbacks/comet.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/callbacks/dvc.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/callbacks/hub.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/callbacks/mlflow.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/callbacks/neptune.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/callbacks/raytune.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/callbacks/tensorboard.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/callbacks/wb.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/checks.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/dist.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/downloads.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/errors.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/export.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/files.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/instance.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/loss.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/metrics.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/ops.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/patches.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/plotting.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/tal.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/torch_utils.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/triton.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/reference/utils/tuner.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/solutions/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/tasks/classify.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/tasks/detect.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/tasks/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/tasks/obb.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/tasks/pose.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/tasks/segment.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/usage/callbacks.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/usage/cfg.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/usage/cli.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/usage/engine.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/usage/python.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/usage/simple-utilities.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/yolov5/environments/aws_quickstart_tutorial.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/yolov5/environments/azureml_quickstart_tutorial.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/yolov5/environments/docker_image_quickstart_tutorial.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/yolov5/environments/google_cloud_quickstart_tutorial.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/yolov5/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/yolov5/quickstart_tutorial.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/yolov5/tutorials/architecture_description.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/yolov5/tutorials/clearml_logging_integration.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/yolov5/tutorials/comet_logging_integration.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/yolov5/tutorials/hyperparameter_evolution.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/yolov5/tutorials/model_ensembling.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/yolov5/tutorials/model_export.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/yolov5/tutorials/model_pruning_and_sparsity.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/yolov5/tutorials/multi_gpu_training.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/yolov5/tutorials/neural_magic_pruning_quantization.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/yolov5/tutorials/pytorch_hub_model_loading.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/yolov5/tutorials/test_time_augmentation.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/yolov5/tutorials/tips_for_best_training_results.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/yolov5/tutorials/train_custom_data.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/en/yolov5/tutorials/transfer_learning_with_frozen_layers.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/mkdocs_github_authors.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/model_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/overrides/javascript/benchmark.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/overrides/javascript/chart-widget.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/overrides/javascript/extra.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/overrides/javascript/giscus.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/overrides/javascript/tablesort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/overrides/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/overrides/partials/comments.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/overrides/stylesheets/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/RTDETR-ONNXRuntime-Python/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/RTDETR-ONNXRuntime-Python/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/RTDETR-ONNXRuntime-Python/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLO-Interactive-Tracking-UI/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLO-Interactive-Tracking-UI/interactive_tracker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLO-Series-ONNXRuntime-Rust/Cargo.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLO-Series-ONNXRuntime-Rust/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLO-Series-ONNXRuntime-Rust/src/main.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLO11-Triton-CPP/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLO11-Triton-CPP/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLO11-Triton-CPP/inference.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLO11-Triton-CPP/inference.hpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLO11-Triton-CPP/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-Action-Recognition/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-Action-Recognition/action_recognition.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-Action-Recognition/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-CPP-Inference/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-CPP-Inference/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-CPP-Inference/inference.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-CPP-Inference/inference.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-CPP-Inference/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-LibTorch-CPP-Inference/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-LibTorch-CPP-Inference/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-LibTorch-CPP-Inference/main.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-MNN-CPP/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-MNN-CPP/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-MNN-CPP/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-MNN-CPP/main_interpreter.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-ONNXRuntime-CPP/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-ONNXRuntime-CPP/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-ONNXRuntime-CPP/inference.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-ONNXRuntime-CPP/inference.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-ONNXRuntime-CPP/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-ONNXRuntime-Rust/Cargo.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-ONNXRuntime-Rust/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-ONNXRuntime-Rust/src/cli.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-ONNXRuntime-Rust/src/lib.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-ONNXRuntime-Rust/src/main.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-ONNXRuntime-Rust/src/model.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-ONNXRuntime-Rust/src/ort_backend.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-ONNXRuntime-Rust/src/yolo_result.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-ONNXRuntime/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-ONNXRuntime/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-OpenCV-ONNX-Python/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-OpenCV-ONNX-Python/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-OpenVINO-CPP-Inference/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-OpenVINO-CPP-Inference/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-OpenVINO-CPP-Inference/inference.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-OpenVINO-CPP-Inference/inference.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-OpenVINO-CPP-Inference/main.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-Region-Counter/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-Region-Counter/yolov8_region_counter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-SAHI-Inference-Video/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-SAHI-Inference-Video/yolov8_sahi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-Segmentation-ONNXRuntime-Python/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-Segmentation-ONNXRuntime-Python/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-TFLite-Python/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/YOLOv8-TFLite-Python/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/heatmaps.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/hub.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/object_counting.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/object_tracking.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/tutorial.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mkdocs.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_cli.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_cuda.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_engine.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_exports.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_integrations.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_python.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_solutions.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ultralytics/engine/exporter.py" beforeDir="false" afterPath="$PROJECT_DIR$/ultralytics/engine/exporter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ultralytics/engine/predictor.py" beforeDir="false" afterPath="$PROJECT_DIR$/ultralytics/engine/predictor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ultralytics/nn/autobackend.py" beforeDir="false" afterPath="$PROJECT_DIR$/ultralytics/nn/autobackend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ultralytics/nn/tasks.py" beforeDir="false" afterPath="$PROJECT_DIR$/ultralytics/nn/tasks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ultralytics/utils/ops.py" beforeDir="false" afterPath="$PROJECT_DIR$/ultralytics/utils/ops.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="31EA86zFSoKzUJshtqVISadjCCO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.2onnx.executor": "Run",
+    "Python.2tensorRT (1).executor": "Run",
+    "Python.final1.executor": "Run",
+    "Python.getFeats.executor": "Debug",
+    "Python.test.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "G:/final/ultralytics/trackers",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\final\ultralytics\trackers" />
+      <recent name="G:\final\ultralytics" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.final1">
+    <configuration name="2onnx" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ultralytics" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2onnx.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="2tensorRT (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ultralytics" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2tensorRT.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="2tensorRT" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ultralytics" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="G:\final\ultralytics\2tensorRT.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="4debug_getFeats" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ultralytics" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="G:\final\ultralytics\4debug_getFeats.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="final1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ultralytics" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/final1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.final1" />
+        <item itemvalue="Python.2tensorRT (1)" />
+        <item itemvalue="Python.2onnx" />
+        <item itemvalue="Python.4debug_getFeats" />
+        <item itemvalue="Python.2tensorRT" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-PY-251.26927.90" />
+        <option value="bundled-python-sdk-41e8cd69c857-64d779b69b7a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.26927.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2f83bb88-ac28-4eb3-98da-88cdfc03012e" name="Changes" comment="" />
+      <created>1755078696326</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1755078696326</updated>
+      <workItem from="1755078697493" duration="2862000" />
+      <workItem from="1755133899924" duration="12974000" />
+      <workItem from="1755161495274" duration="5108000" />
+      <workItem from="1755495742810" duration="4915000" />
+      <workItem from="1755503734362" duration="1469000" />
+      <workItem from="1755521188450" duration="1805000" />
+      <workItem from="1755565898088" duration="18014000" />
+      <workItem from="1755619641228" duration="2874000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ultralytics/nn/autobackend.py</url>
+          <line>635</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ultralytics/nn/autobackend.py</url>
+          <line>643</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ultralytics/nn/autobackend.py</url>
+          <line>724</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ultralytics/nn/tasks.py</url>
+          <line>171</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ultralytics/nn/tasks.py</url>
+          <line>190</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ultralytics/nn/autobackend.py</url>
+          <line>707</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ultralytics/engine/exporter.py</url>
+          <line>609</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../anaconda3/envs/TrackTrack/Lib/site-packages/torch/onnx/utils.py</url>
+          <line>1526</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../anaconda3/envs/TrackTrack/Lib/site-packages/torch/onnx/utils.py</url>
+          <line>1160</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/4debug_getFeats.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ultralytics/nn/tasks.py</url>
+          <line>181</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ultralytics/models/yolo/detect/predict.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ultralytics/utils/ops.py</url>
+          <line>311</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ultralytics/utils/ops.py</url>
+          <line>244</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/2tensorRT.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/trackers/tracker.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ultralytics$final1.coverage" NAME="final1 Coverage Results" MODIFIED="1755622804958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ultralytics$test.coverage" NAME="test Coverage Results" MODIFIED="1755150814253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ultralytics$2tensorRT__1_.coverage" NAME="2tensorRT (1) Coverage Results" MODIFIED="1755575322983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ultralytics$getFeats.coverage" NAME="getFeats Coverage Results" MODIFIED="1755153060050" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ultralytics$2onnx.coverage" NAME="2onnx Coverage Results" MODIFIED="1755572464463" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
