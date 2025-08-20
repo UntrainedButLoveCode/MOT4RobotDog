@@ -13,7 +13,7 @@ def make_parser():
     parser = argparse.ArgumentParser("Tracker")
 
     # For detectors
-    parser.add_argument("--model", type=str, default="yolov8n.engine", help="模型权重")
+    parser.add_argument("--model", type=str, default="yolov8n.pt", help="模型权重")
     parser.add_argument("--conf", type=float, default=0.6, help="置信度")
     parser.add_argument("--iou", type=float, default=0.85, help="交并比")
     parser.add_argument("--classes", type=int, default=0, help="仅检测人")
@@ -33,9 +33,9 @@ def make_parser():
     parser.add_argument("--match_thr", type=float, default=0.70,help="轨迹和检测框关联必须达到的iou匹配值，会逐步缩减，提高要求，跟reduce_step配合使用")
 
     # For ReID
-    parser.add_argument("--with_ReID", type=bool, default=False,help="是否使用ReID")
-    parser.add_argument("--ReID_config", type=bool, default=False,help="ReID模型配置")
-    parser.add_argument("--ReID_weight", type=bool, default=False,help="ReID权重")
+    parser.add_argument("--with_reid", type=bool, default=True,help="是否使用ReID")
+    parser.add_argument("--reid_config", type=str, default="configs/Market1501/bagtricks_R50.yml",help="ReID模型配置")
+    parser.add_argument("--reid_weight", type=str, default="weights\market_bot_R50.pth",help="ReID权重")
 
 
     # For vedio test
@@ -127,12 +127,13 @@ def main(args):
             # 处理结果
             det080 = concatenate_det_arrays(det080)
             det095 = concatenate_det_arrays(det095)
-            # 获取特征
-            feat080 = model.predictor.results[0].feats.cpu().numpy()
-            feat095 = model.predictor.results095[0].feats.cpu().numpy()
-            # 拼接结果和特征
-            det080 = np.concatenate([det080,feat080], axis=1)
-            det095 = np.concatenate([det095,feat095], axis=1)
+            if not args.with_reid:
+                # 获取特征
+                feat080 = model.predictor.results[0].feats.cpu().numpy()
+                feat095 = model.predictor.results095[0].feats.cpu().numpy()
+                # 拼接结果和特征
+                det080 = np.concatenate([det080,feat080], axis=1)
+                det095 = np.concatenate([det095,feat095], axis=1)
 
             tracks = tracker.update(det080, det095,frame)
         else:

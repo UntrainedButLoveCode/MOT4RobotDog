@@ -2,6 +2,8 @@
 from trackers.utils import *
 from trackers.track import *
 from .gmc import *
+from fastreid.emb_computer import EmbeddingComputer
+
 
 class Tracker(object):
     def __init__(self, args):
@@ -17,6 +19,10 @@ class Tracker(object):
         # Set global motion compensation model
         # self.cmc = CMC(vid_name)
         self.gmc = GMC(method=args.gmc_method)
+
+        # reid
+        if self.args.with_reid:
+            self.embedder = EmbeddingComputer(config_path=args.reid_config, weight_path=args.reid_weight)
 
     def init_tracks(self, dets):
         # Get alive tracks, iou_similarity, and scores
@@ -39,6 +45,14 @@ class Tracker(object):
 
         # Get deleted detections &  Encode
         dets_del = find_deleted_detections(dets, dets_95)
+        # reid
+        if self.args.with_reid:
+            embedding = self.embedder.compute_embedding(raw_frame,dets[:,:4])
+            dets = np.concatenate([dets, embedding], axis=1)
+            if dets_del.shape[0] > 0:
+                embedding = self.embedder.compute_embedding(raw_frame,dets_del[:,:4])
+                dets_del = np.concatenate([dets_del, embedding], axis=1)
+
         dets = [Track(self.args, d) for d in dets]
         dets_del = [Track(self.args, d) for d in dets_del]
 
